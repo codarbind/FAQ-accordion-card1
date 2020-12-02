@@ -1,0 +1,173 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Kumbh Sans;
+    color: hsl(238, 29%, 16%);
+    
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center ;
+    align-items: center;
+    background: linear-gradient(to left, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    
+}
+
+.container{
+    width: 750px;
+    height: 400px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    
+}
+.boxContainer{
+    position: absolute;
+    
+    width: 750px;
+    height: 400px;
+    
+}
+section{
+    width: 40%;
+    position: relative;
+    overflow: hidden;
+}
+
+.box{
+    position: absolute;
+    background-image: url("../images/illustration-box-desktop.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 150px;
+    height: 150px;
+    top: 175px;
+    left: -73px;
+    animation: Bounce .8s ease-in-out infinite alternate;
+    z-index: 1;
+
+}
+
+ @keyframes Bounce{
+    from{top: 175px;}
+    to{top: 170px;}
+} 
+
+.woman{
+    position: absolute;
+    background-image: url("../images/illustration-woman-online-desktop.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 380px;
+    height: 380px;
+    left: -60px;
+    top: 15px;
+}
+
+.pattern{
+    position: absolute;
+    background-image: url("../images/bg-pattern-desktop.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 700px;
+    height: 700px;
+    top: -200px;
+    left: -400px;
+}
+
+aside{
+    width: 60%;
+    padding: 30px 10%;
+
+}
+
+.text h2{
+    padding: 30px 0;
+    font-weight: bolder;
+}
+
+#arrow{
+    background-image: url("../images/icon-arrow-down.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 10px;
+    height: 10px;
+    
+}
+
+.question-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+    position: relative;
+}
+
+#answer0,
+#answer1,
+#answer2,
+#answer3,
+#answer4{
+    position: relative;
+
+}
+
+.question-box p{
+    font-size: 12px;
+}
+
+.question-box p:hover{
+    
+    cursor: pointer;
+}
+
+.question-box p:nth-child(1):hover{
+    color: hsl(14, 88%, 65%);
+    font-weight: bolder;
+    
+}
+
+
+#answer0,
+#answer1,
+#answer2,
+#answer3,
+#answer4{
+    display: none;
+    width: 100%;
+    font-size: 12px;
+    color: hsl(240, 6%, 50%);
+    padding-top: 10px;
+}
+
+#arrow:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+    transition: ease-in-out 500ms;
+}
+
+footer{
+    color: white;
+    padding-top: 10px;
+    font-size: 12px;
+    
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    text-decoration: underline;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ accordion card</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Kumbh+Sans">
+    <link rel="stylesheet" href="./css/media.css">
+</head>
+<body>
+    <main class="container">
+        <div class="boxContainer">
+            <div class="box"></div>
+        </div>
+
+        
+        <section>
+            <div class="woman"></div>
+            <div class="pattern"></div>
+        </section>
+        
+        <aside class="text">
+            <h2>FAQ</h2>
+            <div class="questions">
+                <div class="question-box">
+                    <p onclick="toggleFunction0()">How many team members can I invite?</p>
+                    <div id="arrow" onclick="toggleFunction0()"></div>
+                </div>
+                <p id="answer0">You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.</p>
+                
+            </div>
+
+            <div class="questions">
+                <div class="question-box">
+                    <p onclick="toggleFunction1()">What is the maximum file upload size?</p>
+                    <div id="arrow" onclick="toggleFunction1()"></div>
+                </div>
+                <p id="answer1">No more than 2GB. All files in your account must fit your allotted storage space.</p>
+                
+            </div>
+
+            <div class="questions">
+                <div class="question-box">
+                    <p onclick="toggleFunction2()">How do I reset my password?</p>
+                    <div id="arrow" onclick="toggleFunction2()"></div>
+                </div>
+                <p id="answer2">Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.</p>
+                
+            </div>
+
+            <div class="questions">
+                <div class="question-box">
+                    <p onclick="toggleFunction3()">Can I cancel my subscription?</p>
+                    <div id="arrow" onclick="toggleFunction3()"></div>
+                </div>
+                <p id="answer3">Yes! Send us a message and we’ll process your request no questions asked.</p>
+                
+            </div>
+
+            <div class="questions">
+                <div class="question-box">
+                    <p onclick="toggleFunction4()">Do you provide additional support?</p>
+                    <div id="arrow" onclick="toggleFunction4()"></div>
+                </div>
+                <p id="answer4">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+                
+            </div>
+            
+
+        </aside>
+    </main>
+
+    <footer>Challenge by <a href="https://www.frontendmentor.io/challenges" target="_blank" rel="noopener noreferrer">Frontend Mentor</a>. Coded by <a href="https://seunawonugba.github.io/Profile-card-component-challenge/" target="_blank" rel="noopener noreferrer">Awonugba Seun</a>.</footer>
+
+    <script src="./JS/script.js"></script>
+    
+</body>
+</html>
