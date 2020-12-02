@@ -94,7 +94,7 @@ aside{
     font-weight: bolder;
 }
 
-#arrow{
+.arrow{
     background-image: url("../images/icon-arrow-down.svg");
     background-position: center;
     background-repeat: no-repeat;
